@@ -79,6 +79,7 @@ fun MatchCardOne(
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.width(192.dp)
+
             ) {
                 Image(
                     painterResource(id = R.mipmap.ic_aus),
