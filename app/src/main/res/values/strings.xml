@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">StadiumMate</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="update_one_caption">PREVIEWS • WOMEN\'S T20 WORLD CUP, 2023</string>
+    <string name="update_one_title">Can India take the game to Australia in showdown semi-final?</string>
+    <string name="update_one_text">Against a team with seven free-scoring batters, four seamers and four spinners into an XI, India will have their task cut out in Newlands</string>
+    <string name="update_two_caption">NEWS • AUSTRALIA TOUR OF INDIA 2023</string>
+    <string name="update_two_title">Maxwell, Marsh picked for India ODIs</string>
+    <string name="update_two_text">Jhye Richardson returns from a hamstring injury while Hazlewood misses out</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>

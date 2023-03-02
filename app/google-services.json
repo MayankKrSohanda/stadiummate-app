@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "940132202945",
+    "project_id": "stadium-mate",
+    "storage_bucket": "stadium-mate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940132202945:android:c1ac81a320c27fba909740",
+        "android_client_info": {
+          "package_name": "com.stadiummate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940132202945-552p219j6on2drd3cp7j6fqrdjclb9me.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stadiummate",
+            "certificate_hash": "df3f0dc725e488f208dd470d79fc484d3305e2a6"
+          }
+        },
+        {
+          "client_id": "940132202945-vr9kvif72hhg7s4hpvb1ajnl24ogi836.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOiF4UOLJgdVwbpaE3_wiedn7d7_U0MC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940132202945-r2rffm23qo38qr3oeb5kig5vpsa4spa1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
