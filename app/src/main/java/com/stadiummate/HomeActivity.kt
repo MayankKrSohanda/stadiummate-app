@@ -84,6 +84,7 @@ fun MatchCardOne(
                     painterResource(id = R.mipmap.ic_aus),
                     contentDescription = null,
                     contentScale = ContentScale.Crop,
+
                     modifier = Modifier.size(56.dp)
                 )
                 Text(
