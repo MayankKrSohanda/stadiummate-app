@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -407,12 +408,23 @@ private fun StadiumMateBottomNavigation(
             }
         )
         BottomNavigationItem(
-            label = { Text("Profile") },
+            label = { Text("Watch Along") },
             selected = false,
             onClick = { /*TODO*/ },
             icon = {
                 Icon(
-                    painterResource(id = R.drawable.profile),
+                    painterResource(id = R.drawable.watch_party),
+                    contentDescription = null, Modifier.size(25.dp)
+                )
+            }
+        )
+        BottomNavigationItem(
+            label = { Text("Voice Party") },
+            selected = false,
+            onClick = { /*TODO*/ },
+            icon = {
+                Icon(
+                    painterResource(id = R.drawable.mic),
                     contentDescription = null, Modifier.size(25.dp)
                 )
             }
@@ -423,7 +435,7 @@ private fun StadiumMateBottomNavigation(
 @Preview(showBackground = true)
 @Composable
 fun BottomPreview() {
-    FloatingButton()
+    StadiumMateApp()
 }
 
 @Composable
@@ -435,12 +447,10 @@ private fun FloatingButton(
         onClick = { context.startActivity(Intent(context, MatchModeActivity::class.java)) },
         shape = CircleShape,
         backgroundColor = Color(0xFF7267CB),
+        contentColor = Color.White,
         modifier = modifier
     ) {
-        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = modifier) {
-            Icon(painterResource(id = R.drawable.match_mode), contentDescription = null)
-            Text(text = "Match Mode", fontSize = 7.sp)
-        }
+        Icon(painterResource(id = R.drawable.match_mode), contentDescription = null)
     }
 }
 
@@ -451,7 +461,7 @@ private fun StadiumMateApp() {
         Scaffold(
             topBar = { StadiumMateTopAppBar() },
             bottomBar = { StadiumMateBottomNavigation() },
-            floatingActionButton = { FloatingButton() }
+            floatingActionButton = { FloatingButton() },
         ) { padding ->
             HomeScreen(Modifier.padding(padding))
         }

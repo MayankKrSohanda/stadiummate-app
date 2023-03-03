@@ -95,34 +95,23 @@ private fun StadiumMateBottomNavigation(
         contentColor = Color.White,
     ) {
         BottomNavigationItem(
-            label = { Text("Voice Party") },
+            label = { Text("Engagements") },
             selected = true,
             onClick = { /*TODO*/ },
             icon = {
                 Icon(
-                    painterResource(id = R.drawable.mic),
+                    painterResource(id = R.drawable.watch_party),
                     contentDescription = null, Modifier.size(25.dp)
                 )
             }
         )
         BottomNavigationItem(
-            label = { Text("NFT") },
+            label = { Text("Moments") },
             selected = false,
             onClick = { /*TODO*/ },
             icon = {
                 Icon(
                     painterResource(id = R.drawable.nft_icon),
-                    contentDescription = null, Modifier.size(25.dp)
-                )
-            }
-        )
-        BottomNavigationItem(
-            label = { Text("Watch Party") },
-            selected = false,
-            onClick = { /*TODO*/ },
-            icon = {
-                Icon(
-                    painterResource(id = R.drawable.match_mode),
                     contentDescription = null, Modifier.size(25.dp)
                 )
             }
@@ -137,14 +126,11 @@ private fun FloatingButton(
     val context = LocalContext.current
     FloatingActionButton(
         onClick = { context.startActivity(Intent(context, HomeActivity::class.java)) },
-        shape = MaterialTheme.shapes.small,
+        shape = CircleShape,
         backgroundColor = Color(0xFFDC3546),
         modifier = modifier
     ) {
-        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(2.dp)) {
-            Icon(painterResource(id = R.drawable.feed), contentDescription = null)
-            Text(text = "Feeds", fontSize = 8.sp)
-        }
+        Icon(painterResource(id = R.drawable.feed), contentDescription = null)
     }
 }
 
