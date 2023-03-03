@@ -1,5 +1,6 @@
 package com.stadiummate
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -18,11 +19,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.firebase.auth.FirebaseAuth
@@ -334,7 +337,7 @@ fun HomeScreen(
 }
 
 @Composable
-fun StadiumMateTopAppBar(
+private fun StadiumMateTopAppBar(
     modifier: Modifier = Modifier,
 ) {
     TopAppBar(
@@ -384,7 +387,7 @@ fun StadiumMateTopAppBar(
 }
 
 @Composable
-fun StadiumMateBottomNavigation(
+private fun StadiumMateBottomNavigation(
     modifier: Modifier = Modifier
 ) {
     BottomNavigation(
@@ -393,23 +396,23 @@ fun StadiumMateBottomNavigation(
         contentColor = Color.White,
     ) {
         BottomNavigationItem(
-            label = { Text("StadiumMate") },
+            label = { Text("Feed") },
             selected = true,
             onClick = { /*TODO*/ },
             icon = {
                 Icon(
-                    painterResource(id = R.drawable.subtract),
+                    painterResource(id = R.drawable.feed),
                     contentDescription = null, Modifier.size(25.dp)
                 )
             }
         )
         BottomNavigationItem(
-            label = { Text("Explore") },
+            label = { Text("Profile") },
             selected = false,
             onClick = { /*TODO*/ },
             icon = {
                 Icon(
-                    painterResource(id = R.drawable.group),
+                    painterResource(id = R.drawable.profile),
                     contentDescription = null, Modifier.size(25.dp)
                 )
             }
@@ -417,12 +420,38 @@ fun StadiumMateBottomNavigation(
     }
 }
 
+@Preview(showBackground = true)
 @Composable
-fun StadiumMateApp() {
+fun BottomPreview() {
+    FloatingButton()
+}
+
+@Composable
+private fun FloatingButton(
+    modifier: Modifier = Modifier
+) {
+    val context = LocalContext.current
+    FloatingActionButton(
+        onClick = { context.startActivity(Intent(context, MatchModeActivity::class.java)) },
+        shape = CircleShape,
+        backgroundColor = Color(0xFF7267CB),
+        modifier = modifier
+    ) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = modifier) {
+            Icon(painterResource(id = R.drawable.match_mode), contentDescription = null)
+            Text(text = "Match Mode", fontSize = 7.sp)
+        }
+    }
+}
+
+
+@Composable
+private fun StadiumMateApp() {
     StadiumMateTheme {
         Scaffold(
             topBar = { StadiumMateTopAppBar() },
-            bottomBar = { StadiumMateBottomNavigation() }
+            bottomBar = { StadiumMateBottomNavigation() },
+            floatingActionButton = { FloatingButton() }
         ) { padding ->
             HomeScreen(Modifier.padding(padding))
         }

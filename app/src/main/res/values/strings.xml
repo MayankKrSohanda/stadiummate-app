@@ -12,9 +12,12 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="welcome">Welcome!</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="title_activity_main2">MainActivity2</string>
+    <string name="caption">Login to your account for best cricket experience</string>
+    <string name="login_using_google">Login using Google</string>
+    <string name="logo">logo</string>
+    <string name="title_activity_match_mode">MatchModeActivity</string>
 </resources>
