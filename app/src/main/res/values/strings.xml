@@ -20,4 +20,6 @@
     <string name="login_using_google">Login using Google</string>
     <string name="logo">logo</string>
     <string name="title_activity_match_mode">MatchModeActivity</string>
+    <string name="title_activity_engagement">EngagementActivity</string>
+    <string name="title_activity_voice_party">VoicePartyActivity</string>
 </resources>

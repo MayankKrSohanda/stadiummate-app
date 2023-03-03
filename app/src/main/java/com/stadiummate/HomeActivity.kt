@@ -1,8 +1,13 @@
 package com.stadiummate
 
 import android.content.Intent
+import android.graphics.Bitmap
 import android.os.Bundle
+import android.view.ViewGroup
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -14,7 +19,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -29,6 +34,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.viewinterop.AndroidView
 import com.google.firebase.auth.FirebaseAuth
 import com.stadiummate.ui.theme.StadiumMateTheme
 
@@ -287,7 +293,7 @@ fun UpdateCards(
 
 
 @Composable
-fun HomeSection(
+private fun HomeSection(
     title: String,
     modifier: Modifier = Modifier,
     content: @Composable () -> Unit
@@ -306,7 +312,7 @@ fun HomeSection(
 }
 
 @Composable
-fun HomeScreen(
+private fun HomeScreen(
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -391,6 +397,7 @@ private fun StadiumMateTopAppBar(
 private fun StadiumMateBottomNavigation(
     modifier: Modifier = Modifier
 ) {
+    val context = LocalContext.current
     BottomNavigation(
         backgroundColor = Color(0xFF7267CB),
         modifier = modifier,
@@ -421,7 +428,7 @@ private fun StadiumMateBottomNavigation(
         BottomNavigationItem(
             label = { Text("Voice Party") },
             selected = false,
-            onClick = { /*TODO*/ },
+            onClick = { context.startActivity(Intent(context, VoicePartyActivity::class.java)) },
             icon = {
                 Icon(
                     painterResource(id = R.drawable.mic),

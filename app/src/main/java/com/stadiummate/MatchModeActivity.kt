@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -132,6 +133,133 @@ private fun FloatingButton(
     ) {
         Icon(painterResource(id = R.drawable.feed), contentDescription = null)
     }
+}
+
+@Composable
+private fun ThirdUmpireCard(
+    modifier: Modifier = Modifier
+) {
+    Card(
+        shape = MaterialTheme.shapes.small,
+        modifier = modifier
+            .width(343.dp)
+            .height(388.dp)
+            .padding(horizontal = 16.dp)
+    ) {
+        Column(modifier = Modifier.fillMaxSize(1f)) {
+            Text(
+                text = "233 votes",
+                style = MaterialTheme.typography.caption.copy(fontSize = 14.sp),
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 2.dp)
+            )
+            Image(
+                painterResource(id = R.drawable.third_umpire),
+                contentDescription = null,
+                modifier = Modifier
+                    .padding(horizontal = 16.dp, vertical = 2.dp)
+                    .width(313.dp)
+                    .height(192.dp)
+            )
+            Text(
+                text = "Over 13.3",
+                style = MaterialTheme.typography.caption.copy(fontSize = 14.sp),
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp)
+            )
+            Text(
+                style = TextStyle(
+                    fontFamily = FontFamily.Default,
+                    fontWeight = FontWeight.Medium,
+                    fontSize = 22.sp
+                ),
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 2.dp),
+                text = "Rohit Sharma took DRS"
+            )
+            Text(
+                style = TextStyle(
+                    fontFamily = FontFamily.Default,
+                    fontWeight = FontWeight.Light,
+                    fontSize = 14.sp
+                ),
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 2.dp),
+                text = "Rohit appealed for DRS after umpire gave not out to Steve Smith"
+            )
+            Text(
+                text = "Decision Pending",
+                color = Color.Red,
+                style = TextStyle(
+                    fontFamily = FontFamily.Default,
+                    fontWeight = FontWeight.Medium,
+                    fontSize = 20.sp
+                ),
+                modifier = Modifier.padding(horizontal = 77.dp, vertical = 6.dp)
+            )
+        }
+    }
+    Row(modifier = Modifier.padding(horizontal = 35.dp, vertical = 6.dp), ) {
+        Button(
+            onClick = { /*TODO*/ },
+            modifier = Modifier
+                .width(133.dp)
+                .height(40.dp)
+                .padding(horizontal = 4.dp),
+            colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xFF50BB25))
+        ) {
+            Text(text = "Not Out", color = Color.White)
+        }
+        Button(
+            onClick = { /*TODO*/ },
+            modifier = Modifier
+                .width(133.dp)
+                .height(40.dp)
+                .padding(horizontal = 4.dp),
+            colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xFFDC3546))
+        ) {
+            Text(text = "Out", color = Color.White)
+        }
+    }
+}
+
+@Composable
+private fun HomeSection(
+    title: String,
+    modifier: Modifier = Modifier,
+    content: @Composable () -> Unit
+) {
+    Column(modifier) {
+        Text(
+            text = title,
+            style = MaterialTheme.typography.h5,
+            color = Color(0xFF7267CB),
+            modifier = Modifier
+                .paddingFromBaseline(top = 40.dp, bottom = 8.dp)
+                .padding(horizontal = 16.dp)
+        )
+        content()
+    }
+}
+
+@Composable
+private fun HomeScreen(
+    modifier: Modifier = Modifier
+) {
+    Column(
+        modifier = modifier
+    ) {
+        Spacer(Modifier.height(16.dp))
+        HomeSection(
+            title = "Third Umpire Mode",
+            modifier = Modifier.padding(vertical = 4.dp)
+        ) {
+            ThirdUmpireCard()
+        }
+        Spacer(Modifier.height(16.dp))
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun ThirdUmpirePreview() {
+    ThirdUmpireCard()
 }
 
 @Composable
