@@ -28,17 +28,21 @@ All user activities accumulate loyalty points, redeemable for discounts on merch
 ## Screenshots 📷
 
 - **Splash Screen**
-  ![Splash Screen](Images-and-Videos/Splash-Screen.jpg)
+
+  <img src="Images-and-Videos/Splash-Screen.jpg" width="300" alt="Splash Screen">
 
 - **Main Screen**
-  ![Main Screen](Images-and-Videos/Main-Screen.jpg)
+
+  <img src="Images-and-Videos/Main-Screen.jpg" width="300" alt="Main Screen">
 
 - **Match Mode**
-  ![Match Mode](Images-and-Videos/Match-Mode.jpg)
+
+  <img src="Images-and-Videos/Match-Mode.jpg" width="300" alt="Match Mode">
 
 - **Voice Party**
-  ![Voice Party](Images-and-Videos/Voice-Party-Speaker-with-Listener.jpg)
+
+  <img src="Images-and-Videos/Voice-Party-Speaker-with-Listener.jpg" width="300" alt="Voice Party">
 
 ## Demo Video 🎥
 
-[![Watch Demo Video](Images-and-Videos/Splash-Screen.jpg)](Images-and-Videos/Demo-Video.mp4)
+<iframe width="560" height="315" src="Images-and-Videos/Demo-Video.mp4" frameborder="0" allowfullscreen></iframe>
