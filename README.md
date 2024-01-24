@@ -47,6 +47,4 @@ All user activities accumulate loyalty points, redeemable for discounts on merch
 
 - **Demo**
 
-  <video width="300" controls>
-    <source src="Images-and-Videos/Demo-Video.mp4" type="video/mp4">
-  </video>
+  https://github.com/MayankKrSohanda/stadiummate-app/blob/master/Images-and-Videos/Demo-Video.mp4
