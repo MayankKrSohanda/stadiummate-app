@@ -43,6 +43,10 @@ All user activities accumulate loyalty points, redeemable for discounts on merch
 
   <img src="Images-and-Videos/Voice-Party-Speaker-with-Listener.jpg" width="300" alt="Voice Party">
 
-## Demo Video 🎥
+## Video 🎥
 
-<iframe width="560" height="315" src="Images-and-Videos/Demo-Video.mp4" frameborder="0" allowfullscreen></iframe>
+- **Demo**
+
+  <video width="300" controls>
+    <source src="Images-and-Videos/Demo-Video.mp4" type="video/mp4">
+  </video>
