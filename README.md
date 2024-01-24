@@ -1,32 +1,44 @@
-_Stadium Mate_
+# Stadium Mate
 
-_"A must have app for cricket fans, no matter if you’re going to the match or not"_
+**“A must-have app for cricket fans, whether you’re heading to the match or enjoying it from home.”**
 
-Stadium Mate is a mobile app that has been designed to enhance the experience for cricket fans. It is targeted towards two audiences. The first audience is the fans who are going to the stadium to watch the match. The second audience is the fans who are watching the match at home.
+Stadium Mate is a mobile app designed to elevate the experience for cricket enthusiasts. It caters to two distinct audiences: those attending the match in the stadium and those watching from the comfort of their homes.
 
-If you are at home, you can host or join watch parties to get stadium-like experience. If you don't wish to go out, you can connect with felloe cricket fans virtually using voice party.
+- 🏟️ **At the Stadium:**
+  - Answer trivia questions during extra innings.
+  - Engage in Third Umpire Mode during DRS reviews.
 
-If you are in the stadium, you can answer trivia questions during extra innings, or engage in Third Umpire Mode during DRS.
+- 🏠 **At Home:**
+  - Host or join watch parties for a stadium-like experience.
+  - Virtually connect with fellow cricket fans using the voice party feature.
 
-All activities you do, earns loyalty points, which can be redeemed for discounts on merchandise and future purchases on the application.
-
-- Made for all cricket fans
-- Engage fans during the match
-- Gamification using loyalty points
+All user activities accumulate loyalty points, redeemable for discounts on merchandise and future app purchases.
 
 ## Features 🔧
 
-- Host watch parties
-- Find and join watch parties
+- Host and join watch parties
 - Earn blockchain-based loyalty points
-- Connect with fellow cricket fans virtually using voice party
-- Match Mode to turn into a simple UI during match
-- Answer trivia questions during extra innnings and earn points
-- Engage in Third Umpire Mode during DRS
+- Connect with cricket fans via voice party
+- Match Mode for a simplified UI during matches
+- Answer trivia questions and earn points
+- Engage in Third Umpire Mode during DRS reviews
 - Get the latest news and scores
-- Cross platform (web and app)
+- Cross-platform support (web and app)
 
+## Screenshots 📷
 
-## In Action
+- **Splash Screen**
+  ![Splash Screen](Images-and-Videos/Splash-Screen.jpg)
 
-![Splash Screen](https://drive.google.com/file/d/1rErIHNjaw7ta8m6btDHVQsHYa6VqT4m8/view?usp=sharing)
+- **Main Screen**
+  ![Main Screen](Images-and-Videos/Main-Screen.jpg)
+
+- **Match Mode**
+  ![Match Mode](Images-and-Videos/Match-Mode.jpg)
+
+- **Voice Party**
+  ![Voice Party](Images-and-Videos/Voice-Party-Speaker-with-Listener.jpg)
+
+## Demo Video 🎥
+
+[![Watch Demo Video](Images-and-Videos/Splash-Screen.jpg)](Images-and-Videos/Demo-Video.mp4)
