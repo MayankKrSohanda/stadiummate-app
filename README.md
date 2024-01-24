@@ -25,3 +25,8 @@ All activities you do, earns loyalty points, which can be redeemed for discounts
 - Engage in Third Umpire Mode during DRS
 - Get the latest news and scores
 - Cross platform (web and app)
+
+
+## In Action
+
+![Splash Screen](https://drive.google.com/file/d/1rErIHNjaw7ta8m6btDHVQsHYa6VqT4m8/view?usp=sharing)
